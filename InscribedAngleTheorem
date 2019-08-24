@@ -1,0 +1,19 @@
+If A,B, C lie on a circle, then < ACB subtends an arc of measure 2 < ACB.
+
+As usual a diagram is instructive in order to flesh out the proof but for simplicity we will avoid it here.
+
+Join AB. 
+Let <ACB = x . We need to prove that <AOB = 2x.
+We have that OA = OB = OC = R ( radius of the circle )
+Let <OCA = k, Then < OCB = x - k
+In Triangle OAC , OC = OA = R. Therefore OAC is an isosceles triangle.
+< OAC = k 
+By similar arguments <OCB = x - k = < OBC
+In Triangle OAB 2 < OAB + O = 180
+< AOB = O = 180 - 2 < OAB 
+< ACB + <OAC + <OAB + < CBO + <OBA = 180
+  x + k + (180-O)/2 + x - k + (180-O)/2 = 180
+  Therefore <O = central angle = 2x 
+  
+  Hence no matter where point C is on the circle , if <ACB is x the angle subtended at the centre of the circle by the 
+  points A and B will always be 2x. This is the statement of the Inscribed Angle Theorem.
