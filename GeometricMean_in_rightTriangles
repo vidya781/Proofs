@@ -1,0 +1,32 @@
+Henceforth for the purpose of all future proofs, Triangle will simply be called T.
+Thus T (ABC) actually means Triangle ABC.
+
+In T(ABC), let < A be right. Let D be the foot of the altitude from A onto BC.
+
+Prove that AD^2 = BD.CD
+
+Proof:
+
+Going by the inherent structure in the statment we note that it could as well be written as AD/BD = CD/AD
+
+We piece out the triangles embedded within T(ABC) in order to get T(ABD) and T(CAD)
+Also < ADB congruent < CDA ( each 90 degrees)
+AD is the common side
+<ABD congruent <CAD ( it's easy to work this out)
+Therefore by AAS test of congruence, T(ABD) similar T(CAD)
+Hence CD/AD = AD/BD and this leads to the desired result.
+
+There is also an algebraic way that we can take :
+
+Let AD = d, CB = hypoteneuse = h
+Let CD = x
+==> DB = h - x
+By Pythagoras Theorem, (AD)^2 + (DC)^2 = (AC)^2
+==> AD^2 = b^2 - x^2
+Now take the RHS of the statement BD.CD = (h-x)x = hx - x^2
+AD^2 = b^2 - x^2 where b stands for AC
+if AD^2 = BD.CD, then we have b^2 - x^2 = hx - x^2 and hence b^2 = hx
+
+So this means that no matter the triangle ( right angled of course) the product of the hypoteneuse and the length of the
+segment where the altitude from the right angle meets the hypotenuse is equal to the square of the arm adjoining the right 
+angle. 
