@@ -1,0 +1,32 @@
+Let two circles w1 and w2 meet at X and Y. Let a line through X meet w1 and w2 at A and C respectively. Let a line 
+through Y meet w1 and w2 at B and D respectively. Prove that AB || CD.
+
+This is the statement of Reim's Theorem
+
+Proof:
+
+We make a simple assumption first that w1 and w2 are not equal circles so we are treating the general case. The specific
+case is when w1 and w2 are equal circles so ABCD will become a rectangle in that case with opposite sides being parallel
+and the proof being trivial.
+
+As usual, it is instructive to draw a neat geometric figure to tackle this one.
+Since A,B,Y and X are concyclic, < XYB + < XAB = 180 ( property of cyclic quadrilaterals)
+< XYD + < XYB = 180 ( linear pair property)
+
+==> < XYB + < XAB = < XYD + < XYB 
+==> < XAB = < XYD
+Also < YBA = < CXY ( by a similar reasoning)
+
+Now Extend AC and BD such that they eventually meet at a point O. ( if w1 < w2 or vice versa, the extension works and they
+will meet at a point)
+
+In w1, C,D,X and Y are concyclic. 
+< CDY + < CXY = 180 ( property of cyclic quadrilateral)
+and < XCD + < DYX = 180 (property of cyclic quadrilateral)
+
+< CDY + < CDO = 180 ( Linear pair property) 
+Therefore from the above, < CDO = < CXY = < YBA 
+Thus corresponding angles < ODC = < YBA ( congruency )
+and by a similar reasoning < OCD = < XAB ( congruency again)
+Hence CD || AB 
+ 
