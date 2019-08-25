@@ -62,3 +62,27 @@ Therefore if xy = 1, then multiplying by (1-x), (xy)(1-x) = (1-x)
 Thus 1 is the only unit
 
 Proof that R is an integral domain . <===> R = Z2, the field of 2 elements
+
+We start by assuming that the Boolean Ring R is also an integral domain and find some contradictions in case it's not.
+We are given R contains unity.
+For x in R, x^2 = x
+==> x^2 - x = 0
+==> x(x-1) = 0
+Giving us the zero divisors x and x-1 in R ( as per definition of a zero divisor, if the above is true, then x must be a 
+zero divisor (left zero divisor that is) or we can also have x-1 as the right zero divisor and vice versa) Unless
+x = 0 or x = 1.
+
+So if R is to have no non zero divisors, it must contain only 2 elements : 0 and 1
+Thus R is isomorphic to Z2.
+
+An example of a commutative ring with 1 of characteristic 2 which is not a Boolean ring
+
+For a Boolean ring, every element must be idempotent , that is if x in R , then x^2 = x
+
+So if the ring R has unit we could define R {1,-1} and test for idempotency here.
+We note (1)^2 = 1 so this element is idemopotent.
+But (-1) ^2 = 1 and not equal to -1 , so this element is not idempotent
+For commutativity to hold good, ab = ba and hence (-1)(1) = 1(-1) 
+However characteristic of 2 demands that 2(1) = 0 which is not true
+and 2(-1) = 0 which is not true in Z
+
