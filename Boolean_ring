@@ -1,0 +1,27 @@
+Let R be a boolean ring with unity.
+Show that a) x = -x for some x in R
+( R is of characteristic 2)
+
+Proof:
+
+A boolean ring is one in which every element is idempotent. R (+,.) is one such ring.
+
+Since characteristic is 2, and we define let x be in R.
+
+x + k = 0
+==> k = -x
+Now we have to prove that k and x are one and the same element.
+By definition of idempotency, x^2 = x
+==> x^2-x = 0
+==> x(x-1) = 0 -----(1)
+Also
+  if we note k as an element in R, then again by idempotency law, k^2 = k
+  ==> (-x)^2 = -x
+  By additive property, x + (-x)^2 = 0
+  ===> x(1 + x) = 0
+  The same can be written as:
+  -x(-1-x) = 0
+  -x(-x-1) = 0-----(2)
+  From (1) and (2), it follows that x = -x for V x in R
+  
+  
