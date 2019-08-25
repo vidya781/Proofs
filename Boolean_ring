@@ -24,4 +24,41 @@ Also
   -x(-x-1) = 0-----(2)
   From (1) and (2), it follows that x = -x for V x in R
   
-  
+Now in order to prove that a Boolean ring R is commutative:
+
+Proof : We note that for all x in R, -x = (-x)^2 = x^2 = x, so x + x = 0 for all x.
+Next x + y = (x + y)^2 = x^2 + xy + yx + y^2, for all x, y in R
+
+Cancellation yields xy + yx = 0
+So xy = -(yx)
+xy = y(-x)
+But -x = x
+Therefore xy = yx and hence the ring is commutative by definition.
+
+Proof that 0 is the only nilpotent element
+
+We have to show that in such a boolean ring, 0 is the only nilpotent element or in other words, the trivial nilpotent
+element is the only nilpotent element.
+
+Now by definition of nilpotency, x in R is said to be nilpotent, if there is n > 0 such that
+x^n = 0 where x^n stands for x.x.x...x ( n times)
+
+We know that in a boolean ring every element is idempotent , that is x^2 = x for all x in R
+Let x =/= 0,. x^n = 0 and x^2 = x and ==> x^3 = x^2.x = x^2 = x and similarly, x^n = x for all n >= 1 
+and therefopre if x^n = 0 for some n , then x = 0 and is the only nilpotent element
+
+Proof that 1 is the only unit
+
+Let x be a unit and y =/= 0 ( must exist) such that xy = 1 then xy = yx as we know that the Boolean ring is commutative
+
+From above we have that x^2 = x , so it follows that x(1-x) = 0.
+
+Therefore if xy = 1, then multiplying by (1-x), (xy)(1-x) = (1-x)
+==> y.x.(1-x) = (1-x)
+==> y(0) = 1-x
+==> 0 = 1-x 
+==> x = 1
+
+Thus 1 is the only unit
+
+Proof that R is an integral domain . <===> R = Z2, the field of 2 elements
