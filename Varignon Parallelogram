@@ -1,0 +1,37 @@
+Let ABCD be a quadrilateral. Let M,N,P and Q be the mid points of the sides AB, BC, CD and DA. Prove that MNPQ is a 
+parallelogram
+
+Proof:
+
+There are a couple of approaches that one could take. This descriptive and imaginative proof is based on elementary coordinate 
+geometry.
+
+First construct a square in the cartesian plane with Q (0,0) and D(1,0) and A(-1,0) , B(-1,2) and C(1,2)
+Now the midpoints P(1,1), N(2,0),Q(0,0) and M(-1,1) by simple application of mid point formula.
+
+It is not very difficult to see that l(MN) = l(PQ) and l(NP) = l(MQ) and their respective slopes are the same.So MNPQ is a 
+square in this construction.
+
+Now, in order to form a convex quadrilateral, what we do is that hold A,D and C at their original coordinates while
+moving B inward (just for convenience, it could as well be outward) so that ABCD now becomes a convex quadrilateral.
+
+B now has coordinates (x,y).
+M now has ((x-1)/2,y/2)
+N has ((x+1)/2,(y+2)/2)
+
+Slope NP = (y+2/2)-1/(x+1/2)-1 = y/(x-1)
+Slope MQ = y/2/x-1/2 = y/(x-1) 
+
+and so Slope NP = Slope MQ
+
+Also d(NP) = sqrt [ ((x-1)/2)^2 + y^2/4]
+d(MQ) = sqrt [ ((x-1)/2)^2 + y^2/4] 
+
+Hence l(NP) = l(MQ) opposite sides equal
+
+Similarly it is easy to prove that slope MN = slope PQ and l(MN) = l(PQ)
+
+Hence, it is now proven that MNPQ must be a parallelogram
+By a similar argument , if we now move the point C (inward or outward) it is still possible to establish the veracity 
+of this proof in this suitably chosen coordinate system.
+
