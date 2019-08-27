@@ -1,0 +1,34 @@
+In T(ABC), choose points D,E,F on sides BC,CA,AB respectively. Prove that circle C(AEF),C(BFD),C(CDE) share a common point
+known as the Miquel Point.
+
+Proof:
+
+Here C(AEF) denotes circle AEF to indicate the 3 points that the circle is passing through.
+The approach here is to get the 2 points of intersection of the 2 circles and prove that one of the points belongs to the third
+circle also. In that case we have a common point and this point is the Miquel point.
+
+Let M be the other point of intersection of the two circles C(AEF) and C(FBD)
+
+So F and M belong to the 2 circles. We need to show that M belongs to one more circle. At this point we do not know that.
+Join MF and MD where D is the point with B extended.
+
+Since F,M,B,D are concyclic, < FMD + < FBD = 180  ( < denotes angle )
+< FME + < FAE = 180  ( as F,M,A,E are concyclic)
+
+Now, < FMD + < B = 180
+     < FME + < A = 180
+     
+     So adding, < FMD + < FME + < A + < B = 360
+
+Now, < FMD + < FME + < A + < B = 360
+Also < A + < B + < C = 180 as we have T(ABC)
+==> < A + < B = 180 - < C
+==> < FMD + < FME + 180 - < C = 360
+==> < FMD + < FME = 180 + < C
+==> 360 - < DME = 180 + < C
+==> 180 = < DME + < C   ( note that < FMD + < FME + < DME = 360 )
+Now opposite angles < DME + < DCE = 180
+So Quad ( DMEC ) is cyclic . This fact is now established that now there is a circle passing these points.
+
+There is a circle passing through, D,M,E,c and since M belongs to the first two circles, it belongs to the third circle as 
+well and hence is the common point called as Miquel Point.
