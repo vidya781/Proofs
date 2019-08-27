@@ -1,0 +1,18 @@
+Given T(ABC), construct equilateral triangles T(BCD),T(CAE),T(ABF) outside T(ABC). Prove that AD = BE = CF
+
+Solution:
+
+It is instructive to draw out a clear figure in order to do angle or side chasing with the existing information
+
+Consider T(ECB) and T(ACD)
+
+AC Congruent to EC ( both sides have equal length )
+CD Congruent to CB ( as T(CBD) is equilateral)
+Then < ACD = < C + 60
+< ECB = < C + 60
+By SAS test of congruence,
+T (ACD) congruent to T (ECB) and therefore AD = EB
+Similarly, in T(FBC) and T(ABD) they are congruent by SAS test of congruence and hence
+FC = AD
+==> FC = AD = EB
+
