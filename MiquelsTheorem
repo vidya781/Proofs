@@ -28,7 +28,7 @@ Also < A + < B + < C = 180 as we have T(ABC)
 ==> 360 - < DME = 180 + < C
 ==> 180 = < DME + < C   ( note that < FMD + < FME + < DME = 360 )
 Now opposite angles < DME + < DCE = 180
-So Quad ( DMEC ) is cyclic . This fact is now established that now there is a circle passing these points.
+So Quadrilateral( DMEC ) is cyclic . This fact is now established that now there is a circle passing these points.
 
-There is a circle passing through, D,M,E,c and since M belongs to the first two circles, it belongs to the third circle as 
+There is a circle passing through, D,M,E,C and since M belongs to the first two circles, it belongs to the third circle as 
 well and hence is the common point called as Miquel Point.
