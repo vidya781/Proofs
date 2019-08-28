@@ -1,0 +1,20 @@
+Consider a segment XY. Choose points A and B on the same side of line XY such that AX perpendicular XY and BY perpendicular
+XY. Let XY and BX meet at C. Let Z be the foot of the altiutude from C onto XY.
+
+Prove that 1/CZ = 1/AX + 1/BY
+
+Proof:
+
+CZ || AX
+
+Consider T(XAY), CZ/AX = ZY/XY = (XY-ZX)/XY = 1 - ZX/XY . ...(1)
+
+In T(ABY), CZ || BY, XZ/XY = CZ/BY ....(2)
+
+Adding (1) and (2)
+
+CZ/AX + CZ/BY = 1
+
+Hence 1/CZ = 1/AX + 1/BY 
+
+
