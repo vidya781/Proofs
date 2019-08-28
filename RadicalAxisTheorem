@@ -1,0 +1,22 @@
+Let a line be tangent to circles w1 and w2 at A and B respectively.Show that the radical axis of w1 and w2 bisects segment AB
+
+Proof:
+
+Let w1 be the smaller circle intersecting the larger circle at X and Y.
+Let A be on w1 and B be on w2. AB connects w1 and w2 externally and is the common tangent. From Y originates a line through X
+and meets AB at point M.
+
+We have to prove that M is the midpoint of AB
+=> AM = BM
+
+We note that AM is the tangent and MY is the secant cutting the circle at X from the external point M
+Therefore by the tangent secant theorem, (MA)^2 = MY.MX ---(1)
+
+Also MB is the tangent to w2 from external point M. Again it cuts w2 at X and Y where XY is the chord ( MY is the secant here)
+(MB)^2 = MY.MX ----(2)
+Hence from (1) and (2),
+
+MA^2 = MB^2 
+==> MA = MB
+
+Hence M is the mid point of AB and hence the radical axis bisects segment AB
