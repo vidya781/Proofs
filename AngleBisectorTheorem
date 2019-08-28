@@ -1,0 +1,17 @@
+In T(ABC), let D be a point on BC such that AD is the internal angle bisector of < A. Choose a point K different from A
+on AD such that AC = KC. Prove that AB/AC = BD/CD
+
+Proof:
+
+As usual , it is instructive to clearly draw a figure.
+
+Now AC = KC ( by construction)
+Therefore T(ACK) is isosceles
+< CAD = < CKD ----(1)
+In T(ABD) and T(CKD), < BAD = < CKD
+Also < ADB = < CDK ( Vertically opposite angles )
+=> < ABD = < KCD ( Third angle of T equal given that two angles are equal)
+Therefore T(ABD) S T( CKD) ( Let S denote similarity here)
+==> AB/BD = KC/CD
+==> (AB)(CD) = (AC)(BD) As KC = AC
+
