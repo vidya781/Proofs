@@ -1,0 +1,30 @@
+Given a T(ABC), prove that there exists a point P inside the triangle such that < PAB = < PBC = < PCA. This point is known
+as the first Brocard point.
+
+Proof :
+
+Let < PBC = < PCA = < PAB = k 
+k + < PCB + < BPC = 180 -----(1) ( T(BPC))
+k + < PAC + < APC = 180 -----(2) ( T(APC))
+k + < PBA + < APB = 180 -----(3) ( T(APB))
+
+Adding (1) + (2) + (3)
+
+3k + < PCB + < PAC + < PAB + < BPC + < APC + < APB = 3(180)
+
+From the configuration and assuming such a point exists, < BPC + < CPA + < APB = 360
+=> 3k + < PCB + < PAC + < PBA + 360 = 3(180)
+=> 3k + < PCB + < PAC + < PBA = 3(180) - 360
+=> 3k + < PCB + < PAC + < PBA = 180 ----(4)
+
+But < PCB = C - k
+    < PAC = A - k
+    < PBA = B - k ( from the configuration)
+    
+ Substituting in (4),
+ 3k + C - k + A - k + B - k = 180
+ ==> A + B + C = 180 which is true
+ 
+ So the assumption that within the T(ABC) such a point must exist is also true because using this premise we were able to
+ backtrack and derive the conclusion that sum of the angles of a triangle is equal to 180 degrees. Therefore the first
+ Brocard point must exist.
