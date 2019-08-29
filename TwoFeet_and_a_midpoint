@@ -1,0 +1,11 @@
+In T(ABC), let M be the midpoint of BC , E be the foot of the B-altitude, and F be the foot of the C-altitude. Prove that
+ME = MF.
+
+Proof:
+
+Note that if a circle is drawn with BC as a diameter ( longest chord ) then T(BFC) is right angled and so is T(BEC) is
+also right angled as diameter subtends a right angle at any point on the circle.
+M is the centre of the circle in this configuration and we extend BF and EC to meet outside the circle at point A. 
+Clearly then MF = ME = radius of the circle.
+
+
