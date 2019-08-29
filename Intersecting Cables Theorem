@@ -1,5 +1,5 @@
 Consider a segment XY. Choose points A and B on the same side of line XY such that AX perpendicular XY and BY perpendicular
-XY. Let XY and BX meet at C. Let Z be the foot of the altiutude from C onto XY.
+XY. Let XY and BX meet at C. Let Z be the foot of the altitude from C onto XY.
 
 Prove that 1/CZ = 1/AX + 1/BY
 
