@@ -1,0 +1,35 @@
+In T(ABC), let AB < AC. X be the foot of the perpendicular from B on to the angle bisector of < A. Let M and P be the mid
+points of BC and AB respectively.Prove that M, X and P are collinear.
+
+Proof:
+
+This beautiful theorem can be proved by a variety of approaches like dilation, coordinate geometry and similar triangles.
+
+The following approach is by coordinate geometry.
+
+As usual, a neat simple diagram is in order in order to illustrate the concepts and the main points on how the proof 
+should be constructed.
+
+Choose the coordinate system in such a way that X the foot of the perpendicular is at (0,0) 
+Let B be (b,0) and let D be the point where AC cuts the X axis (d,0) be the coordinates.
+A be along the Y axis (0,p) 
+Since the Y axis is the angle bisector in this case, < BAP = < DAP 
+It's clear now that D (d,0) transforms to (b,0) and T(ABD) is isosceles.
+C being in the 4 th quadrant (anticlockwise direction) have coordinates (X,Y)
+Let L be the point where perpendicular from C cuts the X axis.
+M = ( (X + b)/2,Y/2)
+P = ( b/2, p/2)
+Slope XP = p/b ----(1)
+Now, slope MX = Y/(X + b) 
+We have to prove that Y/(X+b) = p/b
+AD = p/(sqrt(p^2+b^2))
+sin < DAX = b/sqrt(p^2 + b^2) 
+In T(ABD) < ADX = <ABX = 90-<DAX 
+< BCL = < DAX ( by the construction)
+cot<BCL = Y/(b + b + X - b) = Y/(X + b)
+and since sin<DAX = sin<BCL = b / sqrt(p^2 + b^2) , cot < BCL = p/b ---(2)
+Therefore Y/(X + b) = p/b 
+From (1) and (2), we infer that M,X and P are collinear.
+
+
+
