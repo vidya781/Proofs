@@ -1,0 +1,25 @@
+Let ABC be a Triangle with a circle passing around it. Let P be a point on the circle ( say somewhere close to C the apex
+of the triangle). Extend AC so that the perpendicular from P meets AC at L.Let the perpendicular from P to AB be at point N
+and let the perpendicular from P to BC be at point M. The simson line is the line passing through these 3 points L, M and N
+Prove that L,M and N are collinear. In other words only if these points are collinear does the line come into existence.
+
+Proof:
+
+As usual, it is very vital to draw a good geometric figure to make some observations and construct the proof step by step.
+
+We make some observations:
+1) In order for L,M and N to be collinear, we note that if we prove that < LMP + < PMN = 180 then our proof is complete.
+2) ABPC is cyclic
+3) < PMB = 90 and so is < PNB = 90 and so PMNB is also cyclic
+It is sufficient to prove that < PML + < PMN = 180
+
+In quadrilateral ABPC, < ACP + < ABP = 180 --- (1)
+In quadrilateral PMNB, < PMN + < < ABP = 180 ---(2)
+and hence from (1) and (2), < ACP = < PMN
+
+In quadrilateral PMCL, < PCL = 180 - < ACP and from the configuration we can see <PML = 180 - < ACP
+
+< PMN + < PML = < ACP + 180 - < ACP = 180
+
+Thus we have established that PMN and PML form a linear pair and hence points, L, M and N are collinear and hence the
+Simson line exists.
