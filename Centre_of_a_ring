@@ -1,0 +1,33 @@
+Prove that the centre of a division ring is a field
+
+In order to flesh out this proof, we get some basic definitions and then try and link each of the elements in a cohesive way.
+
+Field: A commutative division ring R is called a field. Set of  non zero elements of R is an abelian group with respect to the 
+multiplication in R
+
+Division Ring: Ring R in which a set of Non Zero elements is a group with respect to the multiplication in R is called a division ring/
+skew field. Equivalently, R is a division ring if every non zero element of R has a multiplicative inverse in R.
+
+Centre of the ring: The centre of a ring R is the collection Z of all elements of the ring R that commute with every element, that is
+Z = { z: az = za for all a in R }
+
+The centre of a ring is a subring containing together with every invertible element its inverse.
+
+Let us define 2 elements in R {a,b} such that they are non zero that is, a =/= 0 and b =/= 0 and a ^-1 and b ^-1 also exists in this 
+ring by way of expansion
+
+We resort to something called the subring test
+
+if Z is the ring of integers Z(R)
+1 (unity) in Z(R)
+and a,b in Z(R)
+then a-b,a.b in Z(R)( subtraction and multiplication are in Z(R))
+then we say that Z(R) is a subring of R
+By definition,
+Z = { z: az=za for all a in R }
+Therefore a(z) = z(a)
+and b(z) = z(b)
+So this is a collection of elements such that a(b) = b(a) ( abelian) commutes with every other element 
+
+Now, by definition of a field: this is a set of non zero elements which is abelian group w.r.t multiplication in R
+Since a(b) = b(a) is commutative, it is an abelian group with respect to multiplication and by its very definition is a field.
