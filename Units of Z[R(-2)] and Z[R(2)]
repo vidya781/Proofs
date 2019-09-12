@@ -1,0 +1,90 @@
+Show that R = Z[Root[-2] has no units other than +/-1 whereas S = Z[Root[2]] has infinitely many units.
+
+Proof and definitions:
+
+We define the unit as an element in a ring that has a multiplicative inverse. An algebraic integer which divides every 
+algebraic integer in the field.
+
+There are a few ways we can develop the proof and we consider some of them
+
+If R is a ring with identity 1, u in R is a unit if there exists some element v in R, such that uv = 1 = vu
+So -1 is a unit in the integers as it has an inverse
+(-1)(-1) = 1
+In particular its own inverse 
+
+When we consider R = Z[Root(-2)] we say it has no units other than +/- 1
+
+We rely on the concept of a norm on Z[Root(d)]
+Let A in Z[Root(d)]
+where A is of the form a + b[Root(d)] where a, b in Z
+A- which we refer to as the conjugate is a - b[Root(d)]
+For the rings R = Z[Root(d)] where d is a square free integer
+The Norm of A is defined as N(A) = AA- in Z
+Therefore the norm of z in Z is N(z) = z^2
+Norms of the units of Z = +/- 1.
+It is clear that the Norm in the case =/= -1 for any z in Z so we consider the elements whose Norms are 1
++/-1 are units, since N(+/-1) = (+/-)^2 = 1
+for all z' in Z such that z' =/ +-1, z' is not a unit and N(z') =/ +- 1
+In this case, not only do the units of  have a Norm of 1, but also the Non units of Z do not have anorm of +/- 1.
+A special case of the fact that the norm of an element A in Z[Root(d)] = +/-1
+iff A is a unit of Z[Root(d)] 
+Norm on Z[Root(d)] is multiplicative
+N(A.B) = A.B.A-.B- = A.A-.B.B- = N(A)N(B)
+Let A be in Z[Root(d)]
+Then N(A) = +/- 1 <=> A is a unit of Z[Root(d)]
+Proof:
+Suppose that A is a unit
+Then there exists A^-1 in Z[Root(d)] such that A.A- = 1
+Take the Norm on both sides
+N(A.A-) = N(1)
+N(1) = 1
+=> N(A.A-) = 1 = N(A).N(A-)
+The only values that make this statement true is +- 1
+
+Another approach to develop this proof:
+
+Let A in Z[Root(-2)]
+Then N(A) = +/- 1 <=> A is a unit of Z[Root(-2)]
+Suppose that A is a unit, then there exists A- in Z[Root(-2)] such that A.A- = 1
+N(A.A-) = N(1)
+=> N(1) = 1
+1 = N(A).N(A-)
+A in Z[Root(-2)]
+A is of the form : A = a + b{root(-2)} with a,b in Z
+A- the conjugate is of the form : A- = a - b{root(-2)}
+A.A- = 1
+=> N(A.A-) = N(1)
+=> N[(a + b{Root(-2))(a-b{Root(-2)] = N(1)
+=> N(a + b{Root(-2))N(a-b{Root(-2)] = N(1)
+=> N(a + i{Root(2)b)N(a-i{Root(2)b] = N(1)
+Now N(a + i{Root(2)b) = Root(a^2-2b^2) and N(a-iRoot(2)b) = Root(a^2 + 2b^2)
+N(a + i{Root(2)b)N(a-i{Root(2)b] = Root(a^2 + 2b^2)(a^2-2b^2) = Root(a^4 - 4b^4) = N(1)
+                                 = Root(a^4 - 4b^4)
+                                  If a = 1, b = 0 and if a = -1 , b = 0
+                                  then Root(1^4 - 4(0) = 1 and Root((-1)^4 - 4(0) = 1 = N(1)
+Thus the only values that satisfy this are +/- 1. This proves the first part.
+
+For the second part, if we consider that A in Z[Root(d)] where d = 2
+then we have that A in Z[Root(2)]
+Suppose that A is a unit , then there exists A- in Z[root(2)] such that
+A.A- = 1
+A = a + b(Root(2)) a,b in Z
+A- = a -b(Root(2))
+A.A- = 1
+=> N(A.A-) = N(1)
+N[(a+b(Root(2))(a-b(Root(2))] = N(1)
+=> N(a+b(Root(2))N(a-b(Root(2)) = N(1) = 1
+Now N(a + b(Root(2)) = Root(a^2 + 2b^2)
+    N(a - b(Root(2)) = Root(a^2 + 2b^2)
+    N(a + b(Root(2))N(a - b(Root(2)) = a^2 + 2b^2 = N(1)
+    ==> a^2 - 2b^2 = 1
+    ( The all too familiar Pell Equation)
+    a(n) = 1/2 [ (1-Root(2)^n + (1 + Root(2)^n)]
+    n(n) = - 1/2 . 1/Root(2) [ (1-Root(2)^n - (1 + Root(2)]^n
+    a(n)^2 = 1/4{ (1 - Root(2)^2n + (1 + Root(2)^2n + 2((1-Root(2)(1+Root(2)^n)}
+    
+    2b(n)^2 = 1/4 { (1-Root(2)^2n + (1 + Root(2))^2n - 2((1-Root(2)(1+Root(2))^n}
+    So a(n) ^2 - 2b(n) ^2 = 1/4 ( 4 ((1-Root(2)(1 + Root(2)^n)  
+    Thus there could be infinite values of n as far as this is concerned. This proves the second part.
+    
+We made use of some basic definitions, some analysis and algebraic manipulation in order to flesh out this proof.
