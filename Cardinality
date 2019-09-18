@@ -1,0 +1,39 @@
+Prove that the interval (0,1) has the same cardinality as R
+
+Proof:
+
+Firstly, notice that the open interval (-Pi/2,Pi/2) has the same cardinality as the real line. Iin order to see
+why this is true, one has to construct a bijection
+
+f:(-pi/2,pi/2) --> R
+
+Define f(x) = tan(x)
+To show that f is bijective, it suffices to show that it must have an inverse, Inverse is f^-1(x) = tan^-1(x)
+
+(0,1) and (-pi/2,pi/2) have the same cardinality
+Multiply by pi to stretch (0,1) to (0,Pi) and subtract pi/2 to shift (0,Pi) to (-pi/2, pi/2)
+
+g: (0,1) --> (-pi/2,pi/2)
+g(x) = Pi(x) - Pi/2
+
+if 0 < x < 1 then 0 < Pi(x) < Pi
+
+So -Pi/2 < Pi(x) - Pi/2 < Pi/2
+
+This shows that g can take inputs (0,1) and produces the outputs in (-pi/2,pi/2)
+
+To show that g is bijective , one has to produce an inverse
+
+Now swap the x and y's
+
+y = Pi(x) - Pi/2
+=> y + Pi/2 = Pi(x)
+x = (y + Pi/2)/Pi
+Swapping,
+y = (x + Pi/2)/Pi
+
+g(g^-(x)) = g(x + Pi/2)/Pi) = Pi(x + Pi/2)/Pi)- Pi/2 = x
+g^-1(g(x)) = g^-1(Pi(x) - Pi/2) = [Pi(x) - Pi/2 + Pi/2]/Pi = x
+
+Therefore g is a bijection and so (0,1) and (-Pi/2,Pi/2) have the same cardinality. By transitivity, (0,1)and R have
+the same cardinality.
