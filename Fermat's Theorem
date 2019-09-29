@@ -1,0 +1,33 @@
+In recent times, I have often been drawn to mathematical truths. The very basis of why something should be true and the example
+that follows is something that intrigued me for a long time. This is the Fermat's theorem.
+
+If p be a prime, (a+b)^p = (a^p + b^p)modp
+
+We make use of the Binomial Theorem and set up some notation.
+
+p
+ C . = Number of ways of selecting one object from amongst p
+  1 
+ 
+ Let S ( r = 1 to (p-1)) represent sigma running from 1 to p-1
+ 
+ Expanding by the Binomial Theorem, 
+ 
+ (a + b)^ p = a^p + pC1 a^(p-1)b + pC2a^(p-2)b^2 +...+ b^p
+ (a + b)^ p = (a^p + b^p) + S(r = 1 to (p-1)) a^(p-r)b^r . ----(i)
+ 
+ pCr = p!/r!(p-r)!     1 <= r <= (p-1)
+ 
+ But p! = 1.2.3.....p is divisible by p
+ p is coprime to r!
+ As p is coprime to 1,2,3....r, p is coprime to r!
+ For the same reason, p is coprime to (p-r)!
+ pCr = p!/r!(p-r)! is divisible by p
+ 
+ Therefore for some integer k, such that pCr = p.kr
+ 
+ Putting this value of pCr in (i)
+ 
+ (a+b)^p - (a^p + b^p) = p S(r=1 to p-1) kr.a^(p-r).b^r which is divisible by p
+ Therefore (a+b)^p = .  (a^p + b^p) mod p where = . represents congruence
+                  ----
