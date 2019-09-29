@@ -1,0 +1,25 @@
+The number of divisors of a composite number n. If n is a composite number of the order
+n = (p1)^a1(p2)^a2....(pk)^ak, then the number of divisors denoted by d(n) is (a1+1)(a2+1)...(ak+1)
+
+Proof:
+
+Let n be any composite number, let d(n) denote the number of composite number divisors
+By fundamental theorem of arithmetic, n can be expressed as the product of the powers of primes
+
+n = (p1)^a1(p2)^a2....p(k)^ak where p1, p2,....pk are distinct primes and a1,a2...ak are non negative integers
+
+Now since p1 is a prime number, the only divisors of p1^a1 are 1,p1, p1^2,p1^3,.....p1^a1
+The number of these divisors of p1^a1 = a1 + 1
+Similarly the number of divisors of p2^a2 = a2 + 1
+The number of divisors of n = d(n) = p1^a1. p2^a2...p(k) ^ ak = (a1+1)(a2+1)....(ak+1)
+( As every divisor of pi^a(i) ( 1 <= i <= k) is a divisor of n )
+
+Note let n = p1^a1.p2^a2.....p3^a3
+ p1, p2 and p3 are distinct primes
+ 
+Let d(n) denote the number of divisors
+1) If n is a perfect square then d(n) is odd
+2) If n is not a perfect square then d(n) is even
+
+If n is a perfect square, then  number of ways = [d(n) + 1]/2 
+If n is not a perfect square, then number of ways = d(n)/2
