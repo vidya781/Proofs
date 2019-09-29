@@ -1,0 +1,17 @@
+Some inequality relations in Triangles:
+1) If two sides of a T are unequal, the larger side has greater angle opposite to it.
+2) The sum of any two sides of a T is greater than the third side
+3) Of all the line segments that can be drawn to a given line from a point not lying on it, the perpendicular line 
+segment is the shortest.
+
+In T(PQR), QS and RS are the bisectors of < Q and < R respectively. Prove that SQ > SQ
+
+Proof:
+
+In T(PQR), PQ > PR
+=> < PRQ > < PQR ( angle opposite to greater side of T is greater)
+=> 1/2 (< PRQ ) > 1/2 (< PQR)
+=> < SRQ > < SQR
+( As RS and QS are bisectors of < PRQ and < PQR respectively)
+=> SQ > SR ( Side opposite to greater angle is greater)
+
