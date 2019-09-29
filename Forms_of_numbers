@@ -1,0 +1,42 @@
+Prove that the square of each odd number is of the form 8j + 1
+
+Proof:
+
+Let n = 2m + 1 be an odd number
+n^2 = (2m + 1)^2 = 4m^2 + 4m + 1 = 4m(m+1) + 1
+Now, m(m+1) being the product of 2 consecutive integers is divisible by 2! = 2
+Hence m(m+1 ) = 2j
+==> n^2 = 4(2j) + 1 = 8j + 1
+
+If n is an integer, prove that the product n(n^2-1) is a multiple of 6
+
+Proof:
+
+n(n^2-1) = n(n-1)(n+1) = (n-1)(n)(n+1) which being the product of 3 consecutive integers is divisible by 3! = 6,
+and therefore n(n^2-1) is divisible by 6
+Hence n(n^2-1) is a multiple of 6
+
+Prove that there are an infinite number of primes
+
+Proof:
+
+Suppose that the number of primes is finite.
+Therefore there must be a greatest prime
+Let b denote the product of these primes
+b = 2.3.5......q ----(i)
+a = b + 1 -----(ii)
+Surely a is not 1
+Therefore the number a must have a prime factor p | a
+Now p is one of (2,3,5,7......q) ( as according to our assumption 2,3,5,7....q are the only primes)
+Therefore p | b ( as b = 2.3.5.....q)
+Now p | a
+p | a and p | b and hence p | (a - b) or p | 1 ( as a - b = 1 by definition above)
+p = 1 ( not possible as 1 is not prime) and so our supposition is false abd hence the number of primes is infinite
+
+
+Prove that 8^n - 3^n is divisible by 5
+
+Proof:
+8^n - 3^n = (8-3)(8^(n-1) + 8^(n-2).3 + ....+ 3^(n-1))
+8^n - 3^n = 5(8^(n-1) + 8^(n-2).3+...+ 3^(n-1))
+Therefore 8^n - 3^n is divisible by 5
