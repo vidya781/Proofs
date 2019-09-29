@@ -1,0 +1,17 @@
+Given a T(ABC), prove that the perpendicular bisectors of BC, CA and AB concur at a point O. Morever, show that O is the center 
+of the unique circle passing through points A, B and C called the circumcenter.
+
+Proof:
+
+We take a step by step approach to constructing this proof in that let O'P meet BC from O' and let O'Q meet AC from O'.
+All we need to show is that the perpendicular bisector of AB will eventually pass through O'. We employ the technique of
+transitivity in order to achieve the end aim.
+
+We know that by definition, O'B = O'C ( As in T(O'PB) and T(O'PC), BP = PL, O'P = O'P and < O'PC = < O'PB)
+Also in T(O'QC) and T(OQ'A) , O'Q = O'Q and < O'QC = < O'QA = 90 and AQ = QC and O'C = O'A
+
+We need to show O'B = O'A and we are done
+
+We have that O'B = O'C ( by above definition) and O'C = O'A and therefore by transitivity, O'B = O'A
+Hence there is a commom point which is O' and O'A = O'B = O'C and hence we conclude that in the presence of the common point 
+O' , O'A, O'B and O'C are concurrent. In other words, they meet at a common point.This point is the circumcenter.
