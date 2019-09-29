@@ -1,0 +1,16 @@
+PQRS is a Quadrilateral. T and U are points on PS and RS respectively such that PQ = RQ. < PQT = < RQU and <TQS = < UQS
+Prove that QT = QU
+
+Proof:
+
+As usual, it is advisable to draw a neat geometric figure.
+
+In T(PQS) and T(RQS), QS = QS ( common side )
+< PQS = < RQS ( As < PQS = < PQT + < TQS = < RQU + < UQS = < RQS )
+PQ = QR
+Therefore T (PQS) congruent T(RQS) ( SAS Rule )
+Therefore < QPS = < QRS
+That is < QPT = < QRU
+In T(PQT) and T(QRU), < PQT = < RQU
+=> < QPT = < QRU, PQ = QR
+Therefore T(PQT) congruent T(QRU) and hence QT = QU ( By corresponding parts of congruent triangles)
