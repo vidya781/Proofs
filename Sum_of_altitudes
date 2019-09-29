@@ -1,0 +1,13 @@
+Show that the sum of the 3 altitudes of a Triangle is less than the sum of the 3 sides of a Triangle.
+
+Proof:
+
+In T(ABC), let perimeter = AB + BC + CA and sum of altitudes = AD + BE + CF. Now since AD (Perp) BC . (Let (Perp) symbolize a 
+relationship named being perpendicular to)
+
+AD < AB  and AD < AC and therefore 2AD < AB + AC ----(i)
+As BE (Perp) BC, BE < BA and BE < BC and hence 2BE < BC + BA ----(ii)
+As CF (Perp) AB, CF < CA, CF < BC and hence 2 CF < CA + CB ----(iii)
+Adding (i), (ii) and (iii), we get
+2(AD + BE + CF) < AB + BC + CA + CB + BC + BA = 2(AB + BC + CA)
+==> AD + BE + CF < AB + BC + CA 
