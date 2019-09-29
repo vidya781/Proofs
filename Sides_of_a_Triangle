@@ -1,0 +1,25 @@
+In T(PQR), extend PQ and let S be a point on this side. Similarly on PR extended, let T be a point on it. < SQR < <TRQ.
+Prove that PR < PQ
+
+Proof:
+
+< PQR + < SQR = 180 and < PRQ + < TRQ = 180 ( linear pair )
+Therefore < PQR + < SQR = < PRQ + < TRQ 
+But < SQR < < TRQ and hence < PQR < < PRQ
+Therefore PR < PQ ( Side opposite to greater angle is greater)
+
+
+We further some interesting properties of isosceles triangles
+1) If 2 angles of a T are equal, then the sides opposite to them are also equal
+2) If the altitude from one vertex of a T bisects the opposite side, then the T is isosceles.
+3) In an isosceles T, altitude from vertex bisects the base
+4) If the bisector of vertical angles of a T bisects the base of a T, then the T is isosceles.
+
+T(ABC) is an isosceles T with AB = AC, BD and CE are the 2 medians of T. Prove that BD = CE
+
+In T(ABD),T(AEC), AB = AC ( Given)
+AD = AE ( As D is the midpoint of AC, AD = DC ie AD = 1/2 (AC))
+< BAC = < CAB
+(As E is the mid point of AB, so AE = EB )
+AE = 1/2 (AB)
+As AB = AC, AD = AE and T(ABD) congruent T(AEC) ( SAS Rule ) and hence BD = CE
