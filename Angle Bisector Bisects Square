@@ -1,0 +1,61 @@
+A seemingly innocuous looking problem but has a lot to it. In T(ABC), let < A be right. Construct square BCDE on the 
+outside of T(ABC). Show that angle bisector of < A bisects the area of square BCDE.
+
+Proof:
+
+Let l(AB) = c, l(AC) = b and let BC = a . Let the centre of CDEB be O and this means that OC = OB = OE = OD
+
+Our goal is to prove that O lies on the circumcircle of T(ABC) and then relate < OAC and < OBC with measures of arcs.
+
+O be (xo,yo) and as OB^2 = OC^2 , => (xo-c)^2 + yo^2 = xo^2 + (yo-b)^2
+We also note that tan 45 = yo/xo and hence xo = yo ( as tan 45 = 1)
+
+byo - xoc = (b^2-c^2)/2 and hence xo(b-c) = (b^2-c^2)/2 and b not equal to c , xo = (b+c)/2 and yo = (b+c)/2
+=> O = ( (b+c)/2, (b+c)/2)
+
+Now BC ads diameter dubtends a right angle < CAB = 90 and hence we conclude a circle is passing through C,A and B and we need
+to find the equation of the circle having access to 3 points passing through it.
+
+Centre lies on BC
+
+Let (x - xc)^2 + (y - yc)^2 = R^2 and as (0,0) lies on the circle, we get xc^2 + yc^2 = R^2 ----(1)
+Also (0-xc)^2 + (b - yc)^2 = R ^ 2 = xc^2 + yc^2 ( from 1)
+(b-yc)^2 = yc^2, => yc = b/2
+
+Also (c-xc)^2 + (0-yc)^2 = R^2
+(c-xc)^2 = xc^2
+=> xc = c/2
+Therefore centre of the circle is M (c/2, b/2) and radius of the circle is sqrt((c/2-0)^2 + (b/2-0)^2) = (1/2)sqrt ( b^2 + c^2)
+
+Equation of the circle :
+(x - c/2)^2 + (y - b/2)^2 = (b^2 + c^2)/4
+
+To see if O lies on the circle, we subsitute its coordinates in LHS and see what we get:
+
+( (b + c)/2 - c/2)^2 + ( (b + c) / 2 - b/2 )^2 = (b ^ 2 + c ^ 2)/4 = RHS and so O does lie on the circle. Hence COB is a 
+semicircle whose radius is 1/2 . sqrt(b^2 + c^2)
+
+Now area of T formed by OCM = (1/2) | xo yo 1| where M is the centre of the circle
+                                    | xc yc 1|
+                                    | xm ym 1|
+                            = (1/2) | b+c/2 b+c/2 1|
+                                    |  0 .   b .  1|  = (b^2 + c^2)/8 
+                                    |  c/2   b/2  1|
+                                    
+     Area of T formed by OMB = (1/2) | xo yo  1|
+                                     | xb yb  1|
+                                     | xm ym  1| = (1/2) | b+c/2  b+c/2 1|  = (b^2 + c^2)/8
+                                                         | b/2     b/2  1|
+                                                         | c/2     b/2  1| 
+    Since the areas of the 2 triangles are equal, the line OM must be bisecting the areas. But how are we to conclude 
+    it bisects the entire area, one way to look at it is that DCBE is a square and DE = BC.
+    
+    We could further use reflective geometry such that a mirror passes along O || to BC in which case, we would have
+    a similar semicircle passing through D, E and O and DE serving as the diameter. If M' be the midpoint of DE, then
+    by similar arguments, A(T(OM'D)) and A(T(OM'E)) would also be equal. Thus, the entire area would be bisected by MA
+    extended, passing through O and M'. Hence the assertion.
+
+PS: When we talk of measures of arcs, we simply note that arc OC is subtended by CAO (= 45 degree) and joining OB, we note 
+OC is formed by < OBC and since it is the same arc, < OBC = 45 as well and similarly, arc OB is formed by OCB and OAB each
+of which is 45 degree , thus leading us to conclude that OCAB is a square.Thus OC = OB = OD = OE we can further infer that
+the entire area is bisected by AO.
