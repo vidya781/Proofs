@@ -11,3 +11,38 @@ Let O be the centre of the circle . It follows that:
 A(T(ABC)) = A(T(OBC)) + A(T(OAC)) + A(T(OAP)) = 1/2.(BC)(r) + 1/2.(AC)(r) + 1/2.(AB)(r) = r/2 [AB + BC + CA] = r/2(2s) = rs
 where s = (AB + BC + CA)/2
 Hence A(T(ABC)) = rs
+
+Now consider the circumcircle. What are properties or the link between circumradius and the area?
+
+Proof:
+
+Since OB = OC + OA = R it follows that in each of the inner triangles that constitute T(ABC), 2 sides are equal , that is
+equal to R.
+
+It follows that T(OBC) is an isosceles Triangle.
+
+R^2 = h1^2 + a^2/4
+h1^2 = R^2 - a^2/4
+h1 = Sqrt(4R^2-a^2)/2
+A(T(OBC)) = (a/4). Sqrt(4R^2-a^2)
+A(T(OAC)) = (b/4). Sqrt(4R^2-b^2)
+A(T(OAB)) = (c/4). Sqrt(4R^2-c^2)
+
+A(T(ABC)) = (1/4)[a.Sqrt(4R^2-a^2) + b.Sqrt(4R^2-b^2) + c.Sqrt(4R^2-c^2)]
+
+We also get some interesting relations:
+
+2s = a + b + c ( s being the semi perimeter)
+
+cos(A/2) = a/(2R)
+cos(B/2) = b/(2R)
+cos(C/2) = c/(2R) 
+
+cos(A/2).cos(B/2).cos(C/2) = abc/8R^3
+
+s1 = Perimeter for first inner T = 2R + c
+s2 = Perimeter for second inner T = 2R + a
+s3 = Perimeter for third inner T = 2R + b
+
+s1 + s2 + s3 = 6R + (2s)
+Therefore s1 + s2 + s3 = 3(2R + s) where s1,s2,s3 represent the perimeters of T(OAB), T(OBC) and T(OAC) respectively
