@@ -1,0 +1,22 @@
+Choose a positive constant k and points A and B. Prove that the locus of points P such that PA/PB = k is a circle. Circles
+of this type are called Apollonian circles.
+
+Proof:
+
+Locus is a set of points fulfilling a certain geometric criteria.
+
+Choose AB such that A be (0,0) and B be (b,0) and P be in the plane such that it be (x,y)
+
+PA = Sqrt(x^2 + y^2)
+PB = Sqrt((x-b)^2 + (y-0)^2))
+   = Sqrt((x-b)^2 + y^2 and PA/PB = k ( given)
+   
+   Hence x^2 + y^2 = k^2((x-b)^2 + y^2)
+   => x^2(k^2-1) + y^2(k^2-1) + b^2k^2 - 2bk^2x and since k is not 1, k^2 - 1 is not 0 so we can divide throughout by k^2 - 1
+   => x^2 + y^2 + [-2bk^2/(k^2-1)]x + b^2k^2/(k^2-1) = 0
+   The general equation of the circle is x^2 + y^2 + 2gx + 2fy + c = 0 withe the centre being (-g,-f) and the radius being 
+   Sqrt (g^2 + f^2 -c) and so the centre is along the X axis (b.k^2/(k^2-1),0)
+   Radius is Sqrt ( g^2 + f^2 - c) = Sqrt [(b^2k^2/k^2-1)^2 + 0 - b^2k^2/(k^2-1)] = Sqrt[ b^2k^2(b^2k^2-k^2 + 1)/(k^2-1)^2
+    = > Radius = 1/(k^2-1) [ Sqrt ( b^2 k^2 ( b^2k^2 - k^2 + 1)]
+    
+    
