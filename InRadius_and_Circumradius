@@ -1,0 +1,13 @@
+How is the inradius of a circle connected to the area of the triangle within which the circle fits?
+
+[ABC] = sr where s is the semiperimeter
+
+Proof:
+
+So there is a link in that s is the connecting piece. We go about proving the above statement.
+
+Let O be the centre of the circle . It follows that:
+
+A(T(ABC)) = A(T(OBC)) + A(T(OAC)) + A(T(OAP)) = 1/2.(BC)(r) + 1/2.(AC)(r) + 1/2.(AB)(r) = r/2 [AB + BC + CA] = r/2(2s) = rs
+where s = (AB + BC + CA)/2
+Hence A(T(ABC)) = rs
