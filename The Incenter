@@ -1,0 +1,31 @@
+In T(ABC), let O be the meeting point of bisectors of < A and < B.Show that O is the center of the unique circle inside 
+T(ABC) tangent to the sides, the incircle.
+
+Proof:
+
+Let M be the point at which BC is tangent to the circle and let E be the point at which AB is tangent to the circle.
+
+A(T(OBC)) = (1/2)BC(r) = (1/2)a (r) -----(1)
+A(T(OAB) = (1/2)AB(r) = (1/2)c (r)-----(2)
+
+Adding (1) and (2),
+A(T(OBC)) + A(T(OAB)) = r/2 (a + c) and we have a correlation between s and r
+
+Now we know that A(T(ABC)) = sr where 2s = a + b + c
+
+The difference between A(T(ABC)) and the sum of A(T(OBC)) and A(T(OAB)) is nothing but
+
+d = rs - r/2.(a + c) = rb/2 
+
+Intuitively we see that the remaining area must be that of the third inner Triangle T constituting the space of the 'inner part'
+of T(ABC)
+
+Now consider T(OAC) = 1/2 (AC) h3 where h3 is the height of this inner triangle
+But remaining area is 1/2 r b 
+
+Therefore by our supposition, we have 1/2 AC h3 = 1/2 r b 
+=> h3 = r ( as AC = b)
+Therefore its clear that this r is the same r that is the height of the remaining two inner triangles.
+Hence the angle bisector of C must meet the other 2 angle bisectors at a point and so OC is the third angle bisector and the 
+3 bisectors meet at a common point called the incenter and the circle passing through with the sides as tangents is also
+unique called the incircle.
