@@ -1,0 +1,29 @@
+If in a triangle, a^2 + b^2 + c^2 = 8R^2 , then the triangle is right angled. This problem is from BrMO R1 P5 and appeared
+in the year 2000.
+
+Proof:
+
+a^2 + b^2 + c^2 = 8R^2
+
+We approach the proof in two ways.
+We assume the triangle is right angled and pass a circumcircle around it and since diameter subtends a right angle say
+at point B on the circle, we say that b^2 = a^2 + c^2
+=> b^2 + (c^2 + a^2) = 8R^2
+=> 2b^2 = 8R^2
+=> b^2 = 4R^2
+=> b = 2R
+This means the centre of the circle is on AC and let O be the centre, OA = OC = R and hence AC = 2R
+
+Another way of approaching this proof is using the sine Rule
+
+a/sinA = b/sinB = c/sinC = 2R
+=> (2RsinA)^2 + (2RsinB)^2 + (2RsinC)^2 = 4R^2(sin^2A+sin^2B+sin^2C) ( read as sine squared A, etc)--(1)
+A+B+C = 180
+ C = 180-(A+B) 
+ sinC = sin(180-(A+B))= sinAcosB + cosAsinB
+ 
+ So (1) is read as 4R^2(sin^A + sin^B + sin^(A+B)) = 4R^2(sin^A + sin^2B + sin^2Acos^2B + 2sinAcosBcosAsinB + cos^2Asin^2B)
+ if A+B = 90, B = 90-A
+ So (1) further becomes 4R^2(sin^A + sin^2(90-A) + sin^2cos^2(90-A) + 2sinAcos(90-A)cos(A)sin(90-A) + cos^Asin^2(90-A))
+ = 4R^2(1 + sin^4A + 2sin^2Acos^2A + cos^4A) = 4R^2(1 + (sin^2A + cos^2A)^2) = 4R^2(1 + 1) = 8R^2
+ Hence only if one of the angles is right, will the above relationship hold good.
