@@ -1,0 +1,31 @@
+In a square ABCD, on sides AB and BC , mark off points E and F respectively such that BE = BF. Join EC and draw BN perpendicular
+to EC. Prove that < DNF is a right angle.
+
+This one appeared in an Austrian Math Olympiad.
+
+Proof:
+
+Draw EC, BN, Join EF and as BF = BE, < BEF = < BFE , => < BEF = 45
+
+Line of approach: If we prove that NFCD is cyclic, a circle is passing through N, F, C, D then < DNF + < DCF = 180
+( Opposite angles supplementary in a cyclic quadrilateral) and as < DCF = 90, => < DNF = 90 as well.
+
+Let < NEF = t, let < NFE = p . ( representing theta and phi prespectively)
+=> < FNC = t + p ( Exterior angle is sum of remote interior angles)
+Now, < NCF = 180 - ( 90 + t + 45 ) = 45 - t
+< AEN = 135 - t
+< NFC = 135 - p
+=> < FNC = t + p
+135 - t = < CND + < CDN
+
+Now some arguments from a conjectural point of view is that: if we draw FD, a circumcircle with < DCF = 90, then < DNF = 90 and 
+the result is proved 
+
+The other way to think about this is that BE and BF are arbitrary but we only know that BE = BF
+Therefore irrespective of where E, F are marked, then < BEF = < BFE = 45 and N's position as a foot of the perpendicular will 
+depend on where E and F are marked. Accordingly NFE = t and NFE = p will vary
+Draw DN, and extend it to meet AB at M , then just as < BEC and < ECD are alternate angles, < BEC = 45 + t ( from the geometry)
+and hence < ECD = 45 + t
+By a similar argument, < NME = 45 + p and hence < NDC = 45 + p ( As NDC = NME) and so < DNC = 90 - (t + p)
+=> < DNF = 90 as < FNC = t + p
+and hence the result follows
