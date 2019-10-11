@@ -1,0 +1,81 @@
+The problem that follows below can be approached via different perspectives. 
+2 circles externally tangent are also internally tangent to the sides of a right triangle  (6,8,10) with hypoteneuse
+being tangent to both the circles. The circles are of the same radii r.Find r.
+
+Proof and approaches:
+
+Let ABC be (6,8,10) with CA = 10 and AB = 6 and BC = 8, AB Perp BC , AC = hypoteneuse
+
+D be the point where one circle touches AB, E be the point where Second circle ( identical) touches base BC
+G be the point where circle 2 touches AC and G is closer to the base point C.
+H is the point of tangency of circle 1 on Hypoteneuse AC and H is closer to A
+I is the centre of Circle 1 and K is the centre of Circle 2
+
+Draw J || to AB and let IJ be one arm of right triangle AB and JK be the base of this smaller triangle. IK is thus || to HG
+
+Give variables now, x = AH = AD
+y = CG = CE
+So JK = 8-r-y
+IJ = 6-r-x and IK = 2r = 10-(x+y) . (all from the geometry)
+Since T(IJK) ~ T(ABC)
+JK/IK = BC/AC ( property of similar triangles)
+=> (8-r-y)/2r = 8/10 , => 15r = 40-5y -----(1)
+
+IJ/IK = AB/AC , => 11r = 30-5x-----(2)
+
+from (1) and (2),
+-(x+y) = (26r-70)/5
+
+Further 2r = 10-(x+y)
+    => 2r = 10 + [(26r-70)]/5
+    => r = 5/4
+    
+ The following aliter examples are very instructive in spotting flaws and errors and not falling prey to visual Errors 
+ in our diagrammatic representations
+ 
+ Assumption 1: Integral values of x, y and r
+ 
+ x + y = 10 - 2r ----(3)
+ 
+ Now BE = 8-y and BM = 6-x ( BE = BM)
+ Now BD = 6-x, but BM = 6 - x also ( tangent lengths to a given circle equal from an external point)
+ => 8-y = 6-x
+ => y-x = 2 ---(4)
+ 
+ from (3) and (4), we get
+ y = 6-r ----(5) and x = 4-r ----(6)
+ 
+ since x, y and r > 0 and hold integral values ( an obvious flaw)
+ 
+ from (5) we get r = { 1, 2, 3, 4, 5 }
+ and from (6) we get r = {1,2,3 } and therefore the intersection of these 2 solution sets yield {1,2,3 }
+ 
+ Which value do we select and how do we zero in on a particular value, a unique value of r ?
+ 
+ We note that the area of the 2 circles put together must be smaller than that of the right traingle ABC in which they 
+ are inscribed
+ 
+ So Area (T(ABC)) = 1/2 (8) (6) = 24
+ 
+ Area of 2 circles for all 3 radii = 2 ( Pi (r)^2 = 2 pi (1) ^2 = 2 pi = 6.28
+                                   = 2(pi (2)^2 = 8 pi > 24 and we discard calculating the third r as it is obviously > 24
+                                   So according to our assumption the correct value of r in this case is 1
+                                   { and in reality it is off from the correct value by 0.25, being lesser than the correct 
+                                     value because our assumption was flawed in the first place. This is an algebraic flaw.}
+ 
+ Now lets move on to a more serious flaw: a geometric flaw:
+ 
+ Altitude from B to AC passes through the the common point of tangency M
+ 
+ A = 24 as calculated above, one more way of calculating the area = (1/2) 10 . Alt(B)
+ => Alt(B) = 24/5
+ Alt(B) = BM + r
+ => (24/5) = (8-y) + r = 8 - (6-r) + r ( from 5 above)
+ => (24/5) = 2 + 2r
+ => (24-10)/5 = 2r
+ r = 1.4 ( again in this case, off by the correct value by 0.15 , being greater than the correct value of 1.25).
+ 
+ Clearly the assumption of the altitude passing through the common point of tangency does not hold good. A geometric flaw that
+ appeals to be be true to the eye but in reality the numbers do not tally at all. It is hoped both these categories of errors would
+ prove instructive in spotting our own flawed assumptions and incorrect diagramatic representations in constructing proofs
+ and solving problems.
