@@ -1,0 +1,103 @@
+We take a look at induction in Number Theory type problems, which form the bulk in Olympiad Type problems.
+
+1] Product of 2 odd Numbers is always an odd number.
+
+(2m + 1)(2n + 1) = 2m(2n + 1) + 1(2n + 1) = 4mn + 2m + 2n + 1 = 4(mn) + 2(m + n) + 1
+                                                                ---------------
+                                                                  ( Even)         + 1 = Odd
+Hence Even Number + 1 = Odd Number
+
+2] Product of two numbers of the form 6n + 1 is of the same form
+
+  Product of the 2 numbers = (6n1 + 1)(6n2 + 1) = 6n1(6n2 + 1) + 1(6n2 + 1) = 36n1n2 + 6(n1+n2) + 1 = 6[ 6n1n2 + (n1 + n2)] + 1
+  and this is of the form 6 l + 1 
+  
+3] If n is an integer prove that n(n-1)(2n-1) is divisible by 6
+
+Proof : if n = 2 then 6 = 0 mod 6 
+       Now k (k - 1) (2k - 1) is divisible by 6
+           k (k - 1) (2k - 1) = 0 mod 6
+           Now (k + 1) ( k ) (2(k + 1) - 1))
+              = (k + 1) ( k )[ 2k - 1 + 2] = k(k-1)(2k-1) + 2(k-1)(k) = 0 mod 6 + 6 k ^ 2 which is divisible by 6 , hence proved
+
+4] If n is odd, show that n ( n ^ 2 - 1) is divisible by 24
+
+Proof : n = 2p + 1
+        (2p + 1) [ (2p + 1) ^ 2 - 1] = (2p + 1) [ 4p^2 + 4p] = (2p + 1). 4 .(p ^ 2 + p) = 4p (p + 1)(2p + 1) = 0 mod 6
+        
+        Therefore n ( n^2 - 1) is divisible by 24
+        
+5] If x, y > 0 and if ( x - y) is even, show that x ^ 2 - y ^ 2 is div by 4
+
+Proof : We consider two cases : both x and y even, then x + y is also even, x + y = 2k
+     We are given x - y = 2p , therefore 2k. 2p = 4 pk
+     Hence x ^ 2 - y ^ 2 is divisible by 4
+     
+    Case 2 : Both odd, x = 2l1 + 1, y = 2l2 + 1 , x + y = 2(l1 + l2) + 2
+            x + y = 2 [ l1 + l2 + 1] = 2(l1 + l2 + 1)( 2p ) = 4p ( l1 + l2 + 1) is divisible by 4
+   Hence if ( x - y ) is even, show that x ^ 2 - y ^ 2 is divisible by 4.
+   
+6] Prove that 2 ^ 4n - 1 is div by 15
+
+P(1) = 16 - 1 = 15 
+P(2) = 2^ 8 - 1 = 255 mod 15 = 0
+
+Induction Hypotheses : 2 ^ 4k - 1 is divisible by 15, 2^4k - 1 = 0 mod 15
+
+P(k + 1) + 2 ^4(k + 1) - 1 = 2 ^(4k + 4) - 1 = 2 ^ (4k) .2 ^ 4 - 1 = 2 ^ 4k ( 15 + 1) - 1 = 15. 2^ (4k) + 2 ^ 4k - 1 = 0 (mod 15)
+ by the induction hypotheses and hence the statement is proved.
+ 
+ 7] Prove that 2 ^ 2n + 1 is divisible by 5 for all positive odd Numbers.
+ 
+ Proof : Easy to check the cases for P(1) and P(3) , now assume n = 2p + 1
+ P ( p ) = 2 ^ 2 (2p + 1) + 1 = 2 ^ (4p + 2) + 1 = 2 ^ (4p ). 2^2 + 1 = 2 ^ 4p (5-1) + 1 = 2^4p (5-1) + 1
+ Similarly for n = p + 1
+ 
+ 2 ^ 2n + 1 = (2 ^ 2) ^n + 1 = 4 ^ n + 1 ^ n = (4 + 1) [ 4 ^ (n-1) - 4 ^ (n-2) + 4 ^ (n - 3) -.... + 1 )
+ 
+ x ^ n + y ^ n = (x + y) ( x ^ n-1 - x ^(n-2) y + x^(n-3)y ^ 2 -   ... + y ^(n-1)) = 5 ( 4 ^(n-1) - 4^(n-2) + 4^(n-3)-....+ 1)
+ and hence the statement .
+ 
+ 8] 3 ^ 2n + 7 is a multiple of 8
+ 
+ Proof : P(1) = 3 ^2(1) + 7 = 16 | 8
+ 
+ Now P(k) = 3 ^ 2k + 7 is div by 8 that is = 0 mod 8
+ 
+ P(k + 1) = 3 ^ 2(k + 1) + 7 = 3 ^ ( 2k) (9) + 7 = 3 ^ 2K ( 8 + 1) + 7 = 3 ^ 2K .8 + (3 ^ 2K + 7 )  
+ 
+                                                                         ------       ---------
+                                                                         0.              0     
+  Hence the statement is proved.
+  
+  9] Let (m - a, m ) = d
+  As d | (m - a) and d | m
+                                                                         
+     Therefore d | [ m - ( m - a)] or d | a 
+     
+     Now d | m and d | a and d | (a, m) and as d is the common divisor of a and m d | GCD of a,m
+     But (a,m) = 1
+     Therefore (a,m) = 1
+     As d | 1
+     Therefore d = 1 ( only divisor of 1 is 1) 
+     So (m-a,m ) = 1
+     
+  10] (a,b) = (a+b,b)
+  
+  Proof : Let (a,b) = d and (a + b,b ) = e
+  d | a and d | b
+  d | ( a + b) and d | b
+  Therefore d | (a + b),b 
+  Since d is a common divisor of a + b and b , so d also divides gcd of a + b, b 
+  Therefore d | a and let (a + b, b) = e
+  As e | ( a + b) and e | b
+  Hence e | ( a + b ) - b or e | a
+  Now e | a and e | b
+  e | (a,b)
+  e | d and d | e , => e = d 
+  Hence (a,b) = (a + b, b)
+  
+  
+ 
+        
+        
