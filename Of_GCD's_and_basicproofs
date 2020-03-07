@@ -1,0 +1,68 @@
+The following examples are all taken from preparing for the INMO's. Varying examples of GCD's and proofs that serve as a basis 
+for advanced work in Algebra.
+
+1] If a|b , c|d and (b,d) = 1 prove that (a,c) = 1.
+
+Proof : 
+
+b = am for some m
+d = cn for some n
+As (b,d) = 1 so there exist integers x and y such that bx + dy = 1 so that am.x + cn.y = 1, a(mx) + c(ny) = 1
+and hence (a,c) = 1
+
+2] If (a,b) = 1 and c | a , then (c,b) = 1
+
+Proof : ax + by = 1 ----(1) 
+As c | a, a = cm
+cmx + by = 1
+c(mx) + b(y) = 1
+As (c,b) = 1
+
+3] If a | c , b | c then ab | c
+
+Is this statement always true?
+
+Proof : A counter example. Not necessarily true. a = 3 , c = 12
+3 | 12
+
+Let b = 6 , c = 12
+6 | 12 
+
+But ab = 18 and ab > c and hence ab ! | c. ( a statement that says doesnt wholly divide) 
+
+4] If a,m, n are Non Zero Integers , then (a,mn) = 1
+iff (a,m) = 1 and (a,n) = 1
+
+Proof : There must be integers h and k such that ah + mk = 1
+As (a,n) = 1, ar + nt = 1 , ==> ar + nt.1 = 1 , ar + nt(ah + mk) = 1
+=> ar + ahnt + mntk = 1
+=> a(r + nht) + mn(tk) = 1
+=> (a,mn) = 1
+
+a(u) + mn(v) = 1
+a(u) + m(nv) = 1
+(a,m) = 1
+(a,n) = 1 
+
+5] If (a,b) = 1 then (ac,b) = (c,b) 
+
+Proof : Let (ac,b) = d and (c,b) = e
+d is the common divisor of ac and b
+As (c,b) = e then e|c and e | b
+
+(ac,b) = d and (c,b) = e
+
+d | c ----(1)
+
+(b,c) = e 
+e | c.  and e | b 
+e | ac   and e | b
+e is the common divisor of ac, b
+
+e | d and (ac,b) = d
+d | c and e | d
+=> e | c
+   d | c
+=> e = d
+
+
