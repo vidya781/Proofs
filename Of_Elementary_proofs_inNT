@@ -1,0 +1,155 @@
+We look at the entire process of proof building and abstraction and generalisation.
+
+Prove that :
+1] Product of any r consecutive Numbers is divisible by r!
+
+Let P(n) = n(n+1)(n+2).....(n+r-1) be the product of r consecutive integers beginning with n
+For r = 1, P(n) = n ! is divisible by 1 ! for all n 
+The theorem is true for r = 1, the product of 1 consecutive integers is divisible by 1 !
+Assume the truth of the theorem for the product of (r-1) consecutive integers
+That is every product of (r-1) consecutive integers is divisible by (r-1) !
+Changing n to n + 1 gives : P(n+1) = (n+1)(n+2)....(n+r)
+nP(n+1) = n(n+1)(n+2)....(n+r)
+nP(n+1) = n(n+1)....(n+r-1)(n+r)
+nP(n+1) = (n+r)P(n)
+         = nP(n) + rP(n)
+==> P(n+1)-P(n) = rP(n)/n = [rn(n+1)(n+2)....(n+r-1)]/n. ( using P(n) value)
+==> P(n+1)-P(n) = r(n+1)(n+2)...(n+r-1)
+==> P(n+1) - P(n) = r
+
+Product of (r-1) consecutive integers = rP
+P denoting the product of (r-1) consecutive integers
+But we have P = k(r-1)!
+==> P(n+1) - P(n) = rk(r-1)! = kr(r-1)! = k(r)! 
+=> r! | (P(n+1)-P(n) for every n
+Put n = 1, r! | (P2-P1)
+But P1 = 1.2.3...r = r! is divisible by r! 
+=> r1 ! | (P2 - P1) + P, ie r !| P2
+Put n = 2, r ! | (P3 - P2)
+But r ! | P2, r ! | (P3 - P2) + P2
+ie r ! | P3 and so on and so forth
+Generalising we can say that r ! | P(n) for all n
+Corollary : nCr is an integer
+           = n ! / r! (n-r)! = [n(n-1)(n-2)....(n-r+1)(n-r)!]/r! (n-r)! = n(n-1)(n-2)...(n-r+1)/r! = the product of r consecutive integers/(r!) 
+              = An integer
+              Thus the product of r cponsecutive integers is divisible by r
+
+2] Infinitely many squares in the sequence 1,3,6,10,15,21,28.....
+
+Let T(n) = n(n+1)/2
+T(1) = 1, T(2) = 3, T(3) = 6
+If it is a square, T(n) = m^2
+=> n(n+1)/2 = m^2
+=> n(n+1) = m^2
+=> n(n+1) = 2m^2
+T(4n(n+1)) = 4n(n+1)[4n(n+1) + 1]/2 = 4(2m^2)[4m^2 + 4m + 1]/2 = 4m^2(2m+1)^2 
+Thus T4n(n+1) is also a perfect square
+Examples : T(1) = 1, T(8) = 36, all are perfect squares
+
+3] If a and b are any 2 odd primes, show that a^2 - b^2 is composite
+
+a^2 - b^2 = (a+b)(a-b) and as a,b are odd primes
+a = 2k + 1
+b = 2k' + 1
+Therefore a - b = 2k + 1 - 2k' - 1 = 2(k-k') is even
+a + b = 2k + 1 + 2k' + 1 = 2k + 2k' + 2 = 2(k + k' + 1) is even
+Neither a - b nor a + b is 1 and hence a^2 - b^2 is composite
+
+3] If a | c , b | c and (a,b) = 1 then ab | c 
+
+As a | c there exists an integer , such that c = ad, As b | c => c = be for some integer e
+(a,b) = 1, there exists integers m, n such that am + bn = 1
+Multiplying both sides by c, amc + bnc = c, => am(eb) + nb(ad) = c, => ab(em + dn) = c, hence ab | c
+
+4] If a^2 - b^2 is prime, then a^2 - b^2 = a + b where a,b in N
+a^2 - b^2 = (a+b)(a-b) 
+Hence (a^2-b^2) is prime if one of (a+b) or (a-b) = 1
+Let us suppose that a - b = 1 as it is < a + b
+=> a ^ 2 - b ^ 2 = a + b
+Example : 3 ^2 - 2 ^ 2 = 3 + 2 
+3,2 in N
+
+5] An integer is divisible by 3 ( or 9 for that matter) if sum of digits is divisible by 9
+
+Let a = a(n)......a3.a2.a1 = a1 + 10.a2 + 10^2a3 +... = a1 + (a2 + 9a2) + (a3 + 99a3) +.... = (a1 + a2 + a3 + .....) + (9a2 + 99a3 + 999a4 + ....)
+
+a = S + 9(a2 + 11a3 + 111a4 + ....) 
+Therefore a - S = 9(a2 + 11a3 + ....) , hence 9 divides (a - S) 
+Consider 2 cases : Case 1: a is divisible by 9 , 9 | a, 9 | [ a - (a - S)], => 9 | S
+Case 2 : S ( sum of the digits ) is divisible by 9 , ie 9 | S , 9 | [ S + a - S], 9 | a
+Integer a is divisible by 9 
+Therefore in both cases we have proved that only iff the sum of digits is divisible by 9 ( or 3) will the number be divisible 
+by 9 ( or 3 ).
+
+6] GCD of 858 and 325 and express it in the form m(858) + n(325) 
+
+858 = 325.2 + 208 -----(1)
+325 = 208.1 + 117 ------(2)
+208 = 117.1 + 91 -------(3)
+117 = 91.1 +  26 -------(4)
+91  = 26.3 +. 13 -------(5)
+26  = 13.2
+GCD of 858 and 325 is d = 13 = 91 - 26.3 = 91 - 3(117 - 91.1) =4.91 - 3.117
+Substituting the value of 91, = 4(208-117) - 3.117 = 4.208 - 7.117 = 4.208 - 7(325 - 208.1) = 4.208 - 7.325 + 7.208
+= 11.208 - 7.325 = 11 (858 - 2.325) - 7.325 = 11(858 - 2.325) - 7.325 = 11(858 - 325.2) - 7.325 = 11.858 -22.325 - 7.325 
+= 11.858 - 29.325 
+m = 11, n = -29
+
+7] GCD of a + b and a - b is either 1 or 2 if (a,b) = 1
+
+Let (a + b, a - b) = d
+ d | (a + b) and d | (a - b)
+ d | (a + b + a - b) and d | (a + b - a + b),
+ => d | 2a and d | 2b
+ ie d is a common divisor of 2a and 2b 
+ d |(2a,2b)
+ d | 2(a,b)
+ But (a,b) = 1, => d = 1 or d = 2
+
+8] Every 2 consecutive integers are coprime
+
+Let n and n + 1 be 2 consecutive integers and let (n,n+1) = d
+Therefore (n,n+1) = d
+d | n and d | n + 1
+d | (n + 1) - n or d | 1
+Therefore d = 1 
+That is n and n + 1 are relatively prime
+
+9] If a = qb + r , then (a,b) = (b,r)
+
+Let (a,b) = d and (b,r) = e
+As (a,b) = d and as d | a and d | b
+d | a and d | qb
+=> d | (a - qb)
+d | r ( As a - qb = r)
+As d is the common divisor of b and r
+=> d | e ( As e is the GCD of b and r )-----1
+Again (b,r) = e
+As e | b and e | r 
+   e | bq.   e | r
+   e | bq + r
+   e | a ( As a = bq + r)
+   Hence e is a common divisor of a and b
+   Hence e | d   --------2
+(a,b) = (b,r).  ( from 1 and 2 )
+
+10] Infinitely many pairs (a,b) of relatively prime integers ( not necessarily positive ) 
+
+x^2 + 2ax + b = 0
+x^2 + ax + b = 0
+
+For the first equation we have x = -a + sqrt(a^2-b)
+For integral roots, a^2 - b = p^2, b = a^2 - p^2
+
+For the second equation, x = [ -a + sqrt(a^2 - 4b)]/2
+We must have, a ^ 2 - 4b >= 0
+a^2 - 4(a^2 - p^2) >= 0
+4p ^ 2 - 3a^2 >= 0
+=> sqrt(a^2 - b) >= sqrt(3)/2 a
+=> 2 sqrt (a^2 - b) >= a sqrt(3)
+=> a^2 -4b >= 0
+
+So the above must be a necessary condition and it is possible to find a and b that are relatively prime to each other , in fact
+infinite pairs. 
+
+
